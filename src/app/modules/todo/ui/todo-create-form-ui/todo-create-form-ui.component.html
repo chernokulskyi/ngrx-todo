@@ -1,0 +1,9 @@
+<form action="#" (ngSubmit)="onCreate()">
+  <input
+    type="text"
+    name="name"
+    [(ngModel)]="name"
+    autocomplete="off"
+  >
+  <button class="create" [disabled]="!name">Create Todo Item</button>
+</form>
